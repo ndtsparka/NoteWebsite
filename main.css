@@ -1,0 +1,288 @@
+*{  margin: 0;
+    padding: 0;
+}
+
+.menubar {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    z-index: 10;
+    font-size: 18px;
+
+}
+
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.navigation_categories ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
+}
+.navigation_categories ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    
+}
+.navigation_categories ul li::after{
+    content:"";
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition: 0.5s;
+}
+.navigation_categories ul li:hover::after{
+    width:100%;
+}
+
+#logo{ 
+	position:fixed; 
+	top:17; 
+	left:10; 
+} 
+body {
+    margin:0;
+    padding: 0;
+
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+    
+}
+
+.footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer_content p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-family: sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.icons{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+ .icons li{
+    margin: 0 10px 20px 0;
+}
+
+.icons a{
+
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+} 
+
+.note_area{
+    width: 100%;
+    padding: 100px 0 0 0px ;
+    background-color: white;
+    
+
+}
+
+.add_note_button {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    }
+
+.add_note_button:hover{
+    background: #EECB70;
+    transition: 0.5s;
+    border: 2px solid black
+}
+
+
+.save_button {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;}
+
+.save_button:hover{
+    background: #2D8A83;
+    transition: 0.5s;
+    border: 2px solid black
+
+}
+            
+.close_button {
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.close_button:hover{
+    background: #f44336;
+    transition: 0.5s;
+    border: 2px solid black
+
+}
+
+                
+
+.button_template{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: white;
+    margin: 0 0 0 500px;
+    float:left
+}
+
+.button_template:hover{
+    background: #f44336;
+    transition: 0.5s;
+    border: 2px solid black
+
+}
+
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 12%;
+
+}
+
+.form-container {
+max-width: 50%;
+background-color: #F2F3EB;
+padding: 5%  ;
+top:2;
+border: solid 2px #474544;
+
+}
+
+.form-container input[type=text], .form-container input[type=url],.form-container input[type=year], textarea {
+width: 100%;
+margin: 5px 0 10px 0;
+border: none;
+border-bottom: solid 2px #474544;
+max-width: 700px;
+background-color: #F2F3EB;
+padding:10px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=url]:focus,.form-container input[type=year]:focus  {
+
+outline: none;
+}
+
+.text_container{
+    margin-left: 45%;
+    
+}
+
+::placeholder { 
+    color: black;
+    opacity: 1; 
+  }
+  
+:-ms-input-placeholder { 
+color: black;
+}
+
+::-ms-input-placeholder { 
+color: black;
+
+}
+
+textarea{
+    line-height: 150%;
+}
+
+
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 ;
+}
+
+
+.note {
+    max-width: 800px;
+    background-color: #F2F3EB;
+    padding: 5% ;
+    top:2;
+    border: solid 2px #474544;
+
+
+}
+
+.note-text {
+    font-size: 1.2rem;
+    overflow: auto;
+}
+
+.note-title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+}
+  
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+* {
+    box-sizing: border-box;
+  }

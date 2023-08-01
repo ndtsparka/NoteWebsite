@@ -1,0 +1,136 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>BetterNote</title>
+    <link rel="icon" href="images/mode.png" type="image/png" sizes="16x16">
+    <section class = "menubar">
+        <div id="logo"> 
+            <a href="index.html"><img src="images/logo.png" width="150">
+        </div>
+    <nav>
+        <div class = "navigation_categories">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="main.html">FEATURES</a></li>
+                <li><a href="reference.html">REFERENCE</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+            </ul>
+        </div>
+    </nav>
+    </section>
+</head>
+
+
+<body>
+<section class="note_area">
+    <div class="row">
+        <div class="column">
+            <div class="text_container">
+                <button class = "add_note_button" onclick = "addNote()" style="font-size:24px"><i class="fa fa-pencil"></i></button>
+                <button class = "close_button" style="font-size:24px" onclick="closeForm()"><i class="fa fa-close" style="color:black"></i></button>
+                <button id = "save_note" class = "save_button" style="font-size:24px"><i class="fa fa-save"></i></button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br> 
+                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br> 
+            </div>
+
+
+            <div class="form-popup" id="noteForm">
+                <form class="form-container">
+                <input type="text" id ="title" placeholder="Title" required>   
+                <input type="text" id ="author" placeholder="Author">
+                <input type="year" id ="year" placeholder="Year">
+                <input type="url" id ="link" placeholder="Link">     
+                <textarea id ="note_details" id ="details" placeholder="Note Details" required></textarea>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="column">
+                <div class="container">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div id="blank_paper">
+                            <div class="note">
+                                <h3 class="note-title"> $element.title </h3>
+                                <p class="note-text"> $element.author</p>
+                                <p class="note-text"> $element.year</p>
+                                <p class="note-text"> $element.link</p>
+                                <p class="note-text"> $element.details</p>
+                                <button class="button_template" style="font-size:24px"><i class="fa fa-trash-o"></i></button>
+                            </div>
+                        
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer_content">
+        <h1>Website Implementation</h1>
+        <p>Duc Thanh Nguyen - 46724470 </p>
+    </div>
+    <ul class="icons">
+        <li><a href="https://www.facebook.com/BetterNote-110654768312616"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://twitter.com/ChelseaFC"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.youtube.com/channel/UCZnyWbjA4b2gHCVy6Y_gocQ"><i class="fa fa-youtube"></i></a></li>
+     </ul>
+</footer>
+
+</html>
+<script src = script.js></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

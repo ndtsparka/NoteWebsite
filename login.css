@@ -1,0 +1,134 @@
+body {
+    background: url(images/loginwall.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginframe{
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    width: 320px;
+    height: 420px;
+    background: black;
+    color: white;
+    top: 50%;
+    left:50%;
+    position: absolute;
+    padding: 70px 30px;
+}
+
+.profile{
+    width:100px;
+    height: 100px;
+    position: fixed;
+    top:-50px;
+    left: 110px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginframe p{
+    margin: 0;
+    padding:0;
+    font-weight: bold;
+}
+
+.loginframe input, button {
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.loginframe input[type = "text"], input[type = "password"]
+{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+}
+
+.loginframe button[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f7240d;
+    color: white;
+    font-size: 19px;
+    border-radius: 25px;
+
+}
+
+.close {
+    color: darkgrey;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+
+.loginframe button[type="submit"]:hover
+{
+    background: #fabf0e;
+    cursor: pointer;
+    color: black;
+ 
+}
+
+.loginframe a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color:darkgrey;
+
+}
+
+.loginframe a:hover{
+    color: #fabf0e;
+}
+
+.success{
+    display: none; 
+    position: fixed; 
+    padding-top: 200px; 
+    left: 30%;
+    top: 0;
+    width: 40%; 
+    height: 50%; 
+}
+  
+.content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid darkgrey;
+    width: 80%;
+  }
+  
+
+
+
+.success p{
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
